@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <input type="text" id="inhalt" >
+        <button id="einfügen">Einfügen in Array</button>
+
+        <script type="text/javascript">
+        var neuesArray = new Array();
+
+        neuesArray[0] = "Pizza";
+        neuesArray[1] = "Schoki";
+
+        neuesArray.push("neuer Eintrag..");
+
+            document.getElementById("einfügen").onclick =function()
+            {
+                neuesArray.push(document.getElementById("inhalt").value);
+                console.log(neuesArray);
+            }
+            
+        </script>
+
+    </body>
+</html>
