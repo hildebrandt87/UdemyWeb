@@ -1,0 +1,35 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <p> Was ist das Wort?</p>
+        <input type="text" id="zauberwort">
+        <button id="Worttesten">Wort Testen</button>
+
+
+        <script type="text/javascript">
+
+            document.getElementById("Worttesten").onclick = function()
+            {
+                var eingelesenesWort = 
+                document.getElementById("zauberwort").value;
+            
+
+            var zauberwort ="haumichblau"
+
+            if(zauberwort == eingelesenesWort)
+            {
+                alert("Du darfst rein")
+            }
+            else
+            {
+                alert("falsch!!!")
+            }
+            }
+
+        </script>
+
+    </body>
+</html>
